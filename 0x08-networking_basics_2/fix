@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# fixing localhost
+
+cp /etc/hosts ~/fixer.new
+echo "127.0.0.1	localhost" > ~/fixer.new
+cp -f ~/fixer.new /etc/hosts
